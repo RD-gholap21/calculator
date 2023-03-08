@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <div class="demo">
+        <input type="text" name="number" class="id" value="0" readonly>
+        <div class="div1">
+            <button onclick="number(7)">7</button>
+            <button onclick="number(8)">8</button>
+            <button onclick="number(9)">9</button>
+            <button onclick="number('*')">*</button>
+        </div>
+
+        <div class="div1">
+            <button onclick="number(4)">4</button>
+            <button onclick="number(5)">5</button>
+            <button onclick="number(6)">6</button>
+            <button onclick="number('-')">-</button>
+        </div>
+
+        <div class="div1">
+            <button onclick="number(1)">1</button>
+            <button onclick="number(2)">2</button>
+            <button onclick="number(3)">3</button>
+            <button onclick="number('+')">+</button>
+        </div>
+
+        <div>
+            <button onclick="allclear()">C</button>
+            <button onclick="number('%')">%</button>
+            <button onclick="number('.')">.</button>
+            <button onclick="sign('=')">=</button>
+        </div>
+
+        <div>
+            <button onclick="number('0')">0</button>
+            <button onclick="number('/')">/</button>
+            <button onclick=Erase()>D</button>
+            <button onclick="History()">H</button>
+        </div>
+
+    </div><br>
+
+    <div id="history">
+        <h1>History</h1>
+
+        <div class="history1">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
