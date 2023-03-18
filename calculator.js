@@ -39,6 +39,10 @@ function sign() {
 }
 
 function History() {
+    var A=document.getElementById("history")
+    if(A.style.display==="none"){
+        A.style.display="block"
+    }
     var clear = document.getElementById('history');
     clear.innerHTML += field.value + '<br>' + solve + '=' + '<br>';
 }
